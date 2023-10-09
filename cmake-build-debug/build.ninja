@@ -61,6 +61,18 @@ build CMakeFiles/basics_of_programming.dir/laboratory_work_1/laboratory_work_1.c
   OBJECT_DIR = CMakeFiles\basics_of_programming.dir
   OBJECT_FILE_DIR = CMakeFiles\basics_of_programming.dir\laboratory_work_1
 
+build CMakeFiles/basics_of_programming.dir/laboratory_work_2/laboratory_work_2.c.obj: C_COMPILER__basics_of_programming_Debug C$:/Users/Artyom/CLionProjects/basics_of_programming/laboratory_work_2/laboratory_work_2.c || cmake_object_order_depends_target_basics_of_programming
+  DEP_FILE = CMakeFiles\basics_of_programming.dir\laboratory_work_2\laboratory_work_2.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\basics_of_programming.dir
+  OBJECT_FILE_DIR = CMakeFiles\basics_of_programming.dir\laboratory_work_2
+
+build CMakeFiles/basics_of_programming.dir/standart_function/standart_function.c.obj: C_COMPILER__basics_of_programming_Debug C$:/Users/Artyom/CLionProjects/basics_of_programming/standart_function/standart_function.c || cmake_object_order_depends_target_basics_of_programming
+  DEP_FILE = CMakeFiles\basics_of_programming.dir\standart_function\standart_function.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\basics_of_programming.dir
+  OBJECT_FILE_DIR = CMakeFiles\basics_of_programming.dir\standart_function
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target basics_of_programming
@@ -69,7 +81,7 @@ build CMakeFiles/basics_of_programming.dir/laboratory_work_1/laboratory_work_1.c
 #############################################
 # Link the executable basics_of_programming.exe
 
-build basics_of_programming.exe: C_EXECUTABLE_LINKER__basics_of_programming_Debug CMakeFiles/basics_of_programming.dir/main.c.obj CMakeFiles/basics_of_programming.dir/laboratory_work_1/laboratory_work_1.c.obj
+build basics_of_programming.exe: C_EXECUTABLE_LINKER__basics_of_programming_Debug CMakeFiles/basics_of_programming.dir/main.c.obj CMakeFiles/basics_of_programming.dir/laboratory_work_1/laboratory_work_1.c.obj CMakeFiles/basics_of_programming.dir/laboratory_work_2/laboratory_work_2.c.obj CMakeFiles/basics_of_programming.dir/standart_function/standart_function.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\basics_of_programming.dir

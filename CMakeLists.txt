@@ -3,4 +3,4 @@ project(basics_of_programming C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(basics_of_programming main.c laboratory_work_1/laboratory_work_1.c laboratory_work_1/laboratory_work_1.h)
+add_executable(basics_of_programming main.c laboratory_work_1/laboratory_work_1.c laboratory_work_1/laboratory_work_1.h laboratory_work_2/laboratory_work_2.c laboratory_work_2/laboratory_work_2.h standart_function/standart_function.c standart_function/standart_function.h)
