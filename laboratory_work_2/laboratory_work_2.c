@@ -200,3 +200,90 @@ void pizza_pizza_pizza() {
 
     printf("%lld", answer);
 }
+
+void minimum_number() {
+    long long q;
+    scanf("%lld", &q);
+
+    for (int i = 0; i < q; i++) {
+        long long l, r, d;
+        scanf("%lld %lld %lld", &l, &r, &d);
+
+        long long number = (d < l ? d : (r / d + 1) * d);
+
+        printf("%lld\n", number);
+    }
+}
+
+void payment_without_change() {
+    long long q;
+    scanf("%lld", &q);
+
+    for (int i = 0; i < q; i++) {
+        long long a, b, n, S;
+        scanf("%lld %lld %lld %lld", &a, &b, &n, &S);
+
+        long long x = S / n;
+        if (x > a)
+            x = a;
+
+        printf((S - x * n) <= b ? "YES\n" : "NO\n");
+    }
+}
+
+void donut_shops() {
+    long long t;
+    scanf("%lld", &t);
+
+    for (int i = 0; i < t; i++) {
+        long long a, b, c;
+        scanf("%lld %lld %lld", &a, &b, &c);
+
+        long long first_benefit = (a >= c ? -1 : 1);
+        long long second_benefit = (c >= (a * b) ? -1 : b);
+
+        printf("%lld %lld\n", first_benefit, second_benefit);
+    }
+}
+
+void sum_of_odd_numbers() {
+    long long t;
+    scanf("%lld", &t);
+
+    for (int i = 0; i < t; i++) {
+        long long n, k;
+        scanf("%lld %lld", &n, &k);
+
+        printf((n % 2) == (k % 2) && (k * k) <= n ? "YES\n" : "NO\n");
+    }
+}
+
+void vasily_the_bear_and_the_triangle() {
+    long long x, y;
+    scanf("%lld %lld", &x, &y);
+
+    long long abs_side = llabs(x) + llabs(y);
+
+    long long x1, y1, x2, y2;
+    if (x > 0 && y > 0) {
+        x1 = y2 = 0;
+        x2 = y1 = abs_side;
+    }
+    else if (x < 0 && y > 0) {
+        x1 = - abs_side;
+        y2 = abs_side;
+        x2 = y1 = 0;
+    }
+    else if (x > 0 && y < 0) {
+        x1 = y2 = 0;
+        x2 = abs_side;
+        y1 = - abs_side;
+    }
+    else {
+        x2 = y1 = 0;
+        x1 = - abs_side;
+        y2 = - abs_side;
+    }
+
+    printf("%lld %lld %lld %lld\n", x1, y1, x2, y2);
+}
