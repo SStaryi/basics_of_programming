@@ -37,33 +37,12 @@ long long count_negative(int *a, const size_t n) {
     return negative_count;
 }
 
-void reverse_array(int *a, const size_t n) {
-    for (size_t i = 0, j = n - 1; i < j; i++, j--)
-        swap(&a[i], &a[j], sizeof(int));
-}
-
 bool is_array_poly(int *a, const size_t n) {
     for (size_t i = 0, j = n - 1; i < j; i++, j--)
         if (a[i] != a[j])
             return false;
 
     return true;
-}
-
-void sorting_by_choice(int *a, const size_t n) {
-    for (int i = 0; i < n; i++) {
-        int max = a[i];
-        int index = i;
-
-        for (int j = i + 1; j < n; j++)
-            if (a[j] > max) {
-                max = a[j];
-                index = j;
-            }
-
-        if (i != index)
-            swap(&a[i], &a[index], sizeof(int));
-    }
 }
 
 void removing_odd_elems(int *a, size_t *n) {

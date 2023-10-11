@@ -22,14 +22,8 @@ int get_last_even_index(int *a, const size_t n);
 //Подсчёт количества отрицательных элементов
 long long count_negative(int *a, const size_t n);
 
-//Изменение порядка элементов массива на обратный
-void reverse_array(int *a, const size_t n);
-
 //Проверка массива на палиндром
 bool is_array_poly(int *a, const size_t n);
-
-//Сортировка массива выбором
-void sorting_by_choice(int *a, const size_t n);
 
 //Удаление всех нечётных элементов массива
 void removing_odd_elems(int *a, size_t *n);

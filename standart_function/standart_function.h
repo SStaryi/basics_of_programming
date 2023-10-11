@@ -78,4 +78,7 @@ void deletin_an_item_while_maintaining_order(int *a, size_t *n, size_t position)
 //Удаление элемента без сохранения относительного порядка других элементов
 void deleting_an_item_without_preserving_the_order(int *a, size_t *n, size_t position);
 
+//Изменение порядка элементов массива на обратный
+void reverse_array(int *a, const size_t n);
+
 #endif //BASICS_OF_PROGRAMMING_STANDART_FUNCTION_H

@@ -144,3 +144,8 @@ void deleting_an_item_without_preserving_the_order(int *a, size_t *n, size_t pos
     (*n)--;
     a[position] = a[*n];
 }
+
+void reverseArray(int *a, const size_t n) {
+    for (size_t i = 0, j = n - 1; i < j; i++, j--)
+        swap(&a[i], &a[j], sizeof(int));
+}
