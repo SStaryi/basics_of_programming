@@ -107,3 +107,40 @@ bool is_prime(long long a) {
 
     return is_prime_number;
 }
+
+void input_array(long long *a, const size_t n) {
+    for (size_t i = 0; i < n; i++)
+        scanf("%lld", &a[i]);
+}
+
+void output_array(const int *a, const size_t n) {
+    for (size_t i = 0; i < n; i++)
+        printf("%d ", a[i]);
+
+    printf("\n");
+}
+
+void inserting_an_elem_into_an_array(int *a, size_t *n, const size_t position, const int value) {
+    for (size_t i = *n - 1; i >= position; i--)
+        a[i + 1] = a[i];
+
+    a[position] = value;
+    (*n)++;
+}
+
+void adding_an_elem_to_the_end_of_the_array(int *a, size_t *n, int value) {
+    a[*n] = value;
+    (*n)++;
+}
+
+void deletin_an_item_while_maintaining_order(int *a, size_t *n, size_t position) {
+    for (size_t i = position; i < *n; i++)
+        a[i] = a[i + 1];
+
+    (*n)--;
+}
+
+void deleting_an_item_without_preserving_the_order(int *a, size_t *n, size_t position) {
+    (*n)--;
+    a[position] = a[*n];
+}

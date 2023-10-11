@@ -7,6 +7,7 @@
 
 #include <math.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 // Возвращает максимальное из двух int'ов
 int max2(int a, int b);
@@ -58,5 +59,23 @@ bool is_digit(char x);
 
 // Возвращает ‘истину’, если число a простое, или ‘ложь’ в обратном случае
 bool is_prime(long long a);
+
+// Ввод массива a размера n
+void input_array(long long *a, const size_t n);
+
+// Вывод массива a размера n
+void output_array(const int *a, const size_t n);
+
+//Вставка элемента в массив с сохранением относительного порядка других элементов
+void inserting_an_elem_into_an_array(int *a, size_t *n, const size_t position, const int value);
+
+//Вставка элемента в конец массива
+void adding_an_elem_to_the_end_of_the_array(int *a, size_t *n, int value);
+
+//Удаление элемента с сохранением относительного порядка других элементов
+void deletin_an_item_while_maintaining_order(int *a, size_t *n, size_t position);
+
+//Удаление элемента без сохранения относительного порядка других элементов
+void deleting_an_item_without_preserving_the_order(int *a, size_t *n, size_t position);
 
 #endif //BASICS_OF_PROGRAMMING_STANDART_FUNCTION_H
