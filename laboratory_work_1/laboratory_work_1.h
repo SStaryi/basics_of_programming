@@ -5,6 +5,8 @@
 #ifndef BASICS_OF_PROGRAMMING_LABORATORY_WORK_1_H
 #define BASICS_OF_PROGRAMMING_LABORATORY_WORK_1_H
 
+#include <stdio.h>
+
 /*
  * Минуты до Нового года 1283A codeforces
  *

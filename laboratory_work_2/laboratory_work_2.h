@@ -5,6 +5,12 @@
 #ifndef BASICS_OF_PROGRAMMING_LABORATORY_WORK_2_H
 #define BASICS_OF_PROGRAMMING_LABORATORY_WORK_2_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+#include "../standart_function/standart_function.h"
+
 /*
  * Спасти Люка 624A codeforces
  *

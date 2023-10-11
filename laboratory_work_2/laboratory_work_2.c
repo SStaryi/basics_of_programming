@@ -4,12 +4,6 @@
 
 #include "laboratory_work_2.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
-#include "../standart_function/standart_function.h"
-
 void save_luke() {
     float d, L, v1, v2;
     scanf("%f %f %f %f", &d, &L, &v1, &v2);

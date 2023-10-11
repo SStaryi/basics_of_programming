@@ -4,8 +4,6 @@
 
 #include "laboratory_work_1.h"
 
-#include <stdio.h>
-
 void task_1() {
     long long t;
     scanf("%lld", &t);
