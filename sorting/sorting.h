@@ -7,6 +7,9 @@
 
 #include "../standart_function/standart_function.h"
 
+// Функция-компаратор для qsort
+int compare_ints(const void *a, const void *b);
+
 //Сортировка массива a размера n выбором
 void sorting_by_choice(int *a, const size_t n);
 
