@@ -81,4 +81,7 @@ void deleting_an_item_without_preserving_the_order(int *a, size_t *n, size_t pos
 //Изменение порядка элементов массива на обратный
 void reverse_array(int *a, const size_t n);
 
+// Поиск индекса минимального эллемента в массиве линейно рекрсивно
+long long min_index(long long *a, long long i, long long j);
+
 #endif //BASICS_OF_PROGRAMMING_STANDART_FUNCTION_H

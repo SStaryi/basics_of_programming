@@ -149,3 +149,12 @@ void reverseArray(int *a, const size_t n) {
     for (size_t i = 0, j = n - 1; i < j; i++, j--)
         swap(&a[i], &a[j], sizeof(int));
 }
+
+long long min_index(long long *a, long long i, long long j) {
+    if (i == j)
+        return i;
+
+    long long minimal_index = min_index(a, i + 1, j);
+
+    return a[i] < a[minimal_index] ? i : minimal_index;
+}

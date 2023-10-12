@@ -10,4 +10,7 @@
 //Сортировка массива a размера n выбором
 void sorting_by_choice(int *a, const size_t n);
 
+//Рекурсивная сортировка выбором
+void recursive_sorting_by_choice(long long *a, size_t size);
+
 #endif //BASICS_OF_PROGRAMMING_SORTING_H
