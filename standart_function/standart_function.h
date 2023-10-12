@@ -8,6 +8,7 @@
 #include <math.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <assert.h>
 
 // Возвращает максимальное из двух int'ов
 int max2(int a, int b);
@@ -83,5 +84,11 @@ void reverse_array(int *a, const size_t n);
 
 // Поиск индекса минимального эллемента в массиве линейно рекрсивно
 long long min_index(long long *a, long long i, long long j);
+
+// Возвращает НОД чисел a и b
+int gcd(int a, int b);
+
+// Возвращает НОК чисел a и b
+int lcm(int a, int b);
 
 #endif //BASICS_OF_PROGRAMMING_STANDART_FUNCTION_H
