@@ -17,4 +17,4 @@ add_executable(basics_of_programming main.c laboratory_work_1/laboratory_work_1.
         laboratory_work_10/laboratory_work_10.c laboratory_work_10/laboratory_work_10.h
         laboratory_work_11/laboratory_work_11.c laboratory_work_11/laboratory_work_11.h
         laboratory_work_12/laboratory_work_12.c laboratory_work_12/laboratory_work_12.h
-        searches/searches.c searches/searches.h matrix/matrix.c matrix/matrix.h test_matrix/test_matrix.c test_matrix/test_matrix.h str/str.c str/str.h)
+        searches/searches.c searches/searches.h matrix/matrix.c matrix/matrix.h test_matrix/test_matrix.c test_matrix/test_matrix.h str/str.c str/str.h laboratory_work_14/laboratory_work_14.c laboratory_work_14/laboratory_work_14.h)
